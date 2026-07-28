@@ -1,0 +1,14 @@
+/home/kamal/RiderProjects/GnssProxyDemo/GnssProxyDemo/bin/Debug/net10.0/GnssProxyDemo
+/home/kamal/RiderProjects/GnssProxyDemo/GnssProxyDemo/bin/Debug/net10.0/GnssProxyDemo.deps.json
+/home/kamal/RiderProjects/GnssProxyDemo/GnssProxyDemo/bin/Debug/net10.0/GnssProxyDemo.runtimeconfig.json
+/home/kamal/RiderProjects/GnssProxyDemo/GnssProxyDemo/bin/Debug/net10.0/GnssProxyDemo.dll
+/home/kamal/RiderProjects/GnssProxyDemo/GnssProxyDemo/bin/Debug/net10.0/GnssProxyDemo.pdb
+/home/kamal/RiderProjects/GnssProxyDemo/GnssProxyDemo/obj/Debug/net10.0/GnssProxyDemo.GeneratedMSBuildEditorConfig.editorconfig
+/home/kamal/RiderProjects/GnssProxyDemo/GnssProxyDemo/obj/Debug/net10.0/GnssProxyDemo.AssemblyInfoInputs.cache
+/home/kamal/RiderProjects/GnssProxyDemo/GnssProxyDemo/obj/Debug/net10.0/GnssProxyDemo.AssemblyInfo.cs
+/home/kamal/RiderProjects/GnssProxyDemo/GnssProxyDemo/obj/Debug/net10.0/GnssProxyDemo.csproj.CoreCompileInputs.cache
+/home/kamal/RiderProjects/GnssProxyDemo/GnssProxyDemo/obj/Debug/net10.0/GnssProxyDemo.dll
+/home/kamal/RiderProjects/GnssProxyDemo/GnssProxyDemo/obj/Debug/net10.0/refint/GnssProxyDemo.dll
+/home/kamal/RiderProjects/GnssProxyDemo/GnssProxyDemo/obj/Debug/net10.0/GnssProxyDemo.pdb
+/home/kamal/RiderProjects/GnssProxyDemo/GnssProxyDemo/obj/Debug/net10.0/GnssProxyDemo.genruntimeconfig.cache
+/home/kamal/RiderProjects/GnssProxyDemo/GnssProxyDemo/obj/Debug/net10.0/ref/GnssProxyDemo.dll

@@ -1,0 +1,61 @@
+==============================================================================
+  GNSS CACHING PROXY: COMPARATIVE EVALUATION
+==============================================================================
+  Simulated receiver draw          25 mW
+  Time to first fix                10 s  (250 mJ per activation)
+  Client poll interval             30 s
+  Proxy validity window            120 s
+  Requests issued                  20  (10 minutes of operation)
+  Time compression                 200x
+
+==============================================================================
+  TABLE 4.1  Receiver activations and energy over an identical request sequence
+==============================================================================
+  Configuration     Requests  Activations   Energy (mJ)   From cache
+  Direct access           20           20          5000            0
+  With proxy              20            5          1250           15
+
+  Activations avoided              15 of 20
+  Reduction in activations         75.0 %
+  Reduction in energy consumed     75.0 %
+  Improvement factor               4.00x
+
+  The client code executed in both configurations is identical. The
+  difference is attributable solely to the presence of the proxy.
+
+==============================================================================
+  TABLE 4.2  Effect of validity window length on activations and staleness
+==============================================================================
+    Window (s)  Activations   Energy (mJ)   Max staleness (s)
+             0           20          5000                 0.0
+            30           20          5000                 0.0
+            60           10          2500                30.0
+           120            5          1250                95.9
+           300            2           500               270.4
+           600            1           250               570.7
+
+  A window of zero disables caching and reproduces direct access. Longer
+  windows reduce activations monotonically and increase maximum position
+  age correspondingly. The appropriate value is application dependent.
+
+==============================================================================
+  4.3  Behaviour when acquisition fails
+==============================================================================
+  Fix obtained under clear sky     (  6.51559,   3.38945) acquired 17:08:40.974
+  Signal obstructed, fix returned  (  6.51559,   3.38945) acquired 17:08:40.974 [STALE]
+
+  Stale fallbacks served           1
+  The last known position is returned marked stale rather than failing
+  outright. The stored timestamp is not refreshed, so the receiver is
+  retried on the next request instead of the fix appearing valid again.
+
+==============================================================================
+  4.4  Concurrent requests
+==============================================================================
+  Concurrent requests issued       20
+  Receiver activations             1
+  Energy consumed (mJ)             250
+
+  Requests arriving during an acquisition are coalesced onto it rather
+  than each triggering a separate activation.
+==============================================================================
