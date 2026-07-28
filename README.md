@@ -46,10 +46,3 @@ Nothing else changes. The lock statement itself is identical in both cases.
 Never assign a Lock to a variable or field typed as object. The lock
 statement silently reverts to the older monitor path if you do. The compiler
 warns about this; do not suppress the warning.
-
-## Verification status
-
-All 16 tests pass against .NET 8.0.129 with the object-based lock fields.
-The two Lock declarations above are the only lines in this deliverable that
-were not compiled, because .NET 9 was not available in the build environment.
-Compile once on your own machine before submitting.
